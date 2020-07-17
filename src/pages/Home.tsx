@@ -1,6 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
-
 const Home: React.FC = () => {
   return (
     <IonPage>
@@ -18,6 +17,10 @@ const Home: React.FC = () => {
           </a>{' '}
           will be your guide.
         </p>
+        <button ion-button (click) = "showAlert()" icon-start large round color="dark">
+    <ion-icon name="star"></ion-icon>
+    clike me m8
+  </button>
       </IonContent>
     </IonPage>
   );
